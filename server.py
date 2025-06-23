@@ -21,9 +21,9 @@ def sent_emotion_detector():
         return 'Invalid text! Please try again!'
 
     text = "For the given statement, the system response is"
-    text += f" 'anger': {result['anger']}, 'disgust': {result['disgust']}," 
+    text += f" 'anger': {result['anger']}, 'disgust': {result['disgust']},"
     text += f" 'fear': {result['fear']}, 'joy': {result['joy']}"
-    text += f" and 'sadness': {result['sadness']}." 
+    text += f" and 'sadness': {result['sadness']}."
     text += f" The dominant emotion is {result['dominant_emotion']}."
 
     return text
