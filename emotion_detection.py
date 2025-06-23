@@ -9,7 +9,7 @@ def emotion_detector(text_to_analyze):
 
     formatted_response = json.loads(response.text)
 
-    emotions = formatted_response["emotionPredictions"]["emotions"]
+    emotions = formatted_response["emotionPredictions"][0]["emotions"]
 
     maxEmotion = ''
     maxScore = 0
